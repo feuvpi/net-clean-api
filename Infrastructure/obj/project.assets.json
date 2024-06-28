@@ -343,11 +343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
-      "outputPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Infrastructure\\obj\\",
+      "outputPath": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -364,8 +364,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Core\\Core.csproj": {
-              "projectPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Core\\Core.csproj"
+            "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj": {
+              "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj"
             }
           }
         }

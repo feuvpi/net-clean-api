@@ -5523,11 +5523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Tests\\Tests.csproj",
+      "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Tests\\Tests.csproj",
+      "projectPath": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
-      "outputPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Tests\\obj\\",
+      "outputPath": "M:\\dev\\API\\team-manegement-api\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",

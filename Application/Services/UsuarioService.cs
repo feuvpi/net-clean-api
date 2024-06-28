@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Core.Entities;
+using Core.Interfaces;
 
 namespace Application.Services
 {
-    internal class UsuarioService
+    public class UsuarioService : BaseService<Usuario>
     {
+        private readonly IBaseRepository<Usuario> _usuarioRepository;
+
+        public UsuarioService(IBaseRepository<Usuario> usuarioRepository) : base(usuarioRepository)
+        {
+            _usuarioRepository = usuarioRepository;
+        }
+
+        // Add any additional functionality specific to the Atleta entity here
+        //public async Task<Atleta> GetByNomeAsync(string nome)
+        //{
+        //    return await _atletaRepository.GetByNomeAsync(nome);
+        //}
     }
 }

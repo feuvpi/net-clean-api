@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Core\\Core.csproj",
+      "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Core\\Core.csproj",
+      "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
-      "outputPath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Core\\obj\\",
+      "outputPath": "M:\\dev\\API\\team-manegement-api\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",

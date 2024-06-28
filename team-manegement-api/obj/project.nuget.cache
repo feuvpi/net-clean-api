@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GLelIRM+tJmolGjkYB/HPZIORqVWYlufDOmFYF5WjoHC0cJx2jwXnkclvK6215wMHGpQTiC1JTSHUDEJXzDx4g==",
+  "dgSpecHash": "YFt15n71oWQZxcMhjiOqzd5ZOVhmEsfBADnUC7tgn4JJgou+nED1SFpUps03EKp4To3vgbvyegr1ex7/6Y9T1Q==",
   "success": true,
-  "projectFilePath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\team-manegement-api\\API.csproj",
+  "projectFilePath": "M:\\dev\\API\\team-manegement-api\\team-manegement-api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6x66janCVlqSKiZN7lXQBEAd3NGNSz36z3tQO0Cp3KBuLpXSbETGLiJ1gGaGq3nRIndOFW2ZfYS7qOHA2fYbUg==",
+  "dgSpecHash": "tAFGrNV1h1wtsJ7rSyyH87kB9gsAUawOOThYl43cSPVJcJhi3xH+IKhgCYCoKpX7SXMc/quhswD6d06DzLLA1Q==",
   "success": true,
-  "projectFilePath": "M:\\dev\\devprojects\\dashboard-ssafc\\team-manegement-api\\Tests\\Tests.csproj",
+  "projectFilePath": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
