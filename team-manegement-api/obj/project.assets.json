@@ -1184,6 +1184,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Application >= 1.0.0",
+      "Core >= 1.0.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.5",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.5",
@@ -1220,6 +1221,9 @@
           "projectReferences": {
             "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj": {
               "projectPath": "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj"
+            },
+            "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj": {
+              "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj"
             },
             "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj": {
               "projectPath": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj"
