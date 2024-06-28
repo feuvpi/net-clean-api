@@ -1,0 +1,7 @@
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.AssemblyInfo.cs
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+M:\dev\dev-studio\team-management\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
