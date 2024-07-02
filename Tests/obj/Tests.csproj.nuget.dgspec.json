@@ -4,14 +4,86 @@
     "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj": {
+    "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
-        "projectName": "Tests",
-        "projectPath": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
+        "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
-        "outputPath": "M:\\dev\\API\\team-manegement-api\\Tests\\obj\\",
+        "outputPath": "M:\\dev\\API\\team-manegement-api\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj": {
+                "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj"
+              },
+              "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.0.0-preview1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
+        "outputPath": "M:\\dev\\API\\team-manegement-api\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +112,154 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
+        "outputPath": "M:\\dev\\API\\team-manegement-api\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj": {
+                "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "M:\\dev\\API\\team-manegement-api\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\",
+        "outputPath": "M:\\dev\\API\\team-manegement-api\\Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Feu's m15 R6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj": {
+                "projectPath": "M:\\dev\\API\\team-manegement-api\\Application\\Application.csproj"
+              },
+              "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj": {
+                "projectPath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
