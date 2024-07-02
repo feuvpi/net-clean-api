@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "Mdyb9LvlzEEOv4njXO/AwnonSG5mL5T99dfTeuEL4FU=",
-  "Source": "team-manegement-api",
-  "BasePath": "_content/team-manegement-api",
+  "Hash": "bUm1vPqwZHJejLhtNIB7WgmMI8ngxypkYrDApg4MvgQ=",
+  "Source": "API",
+  "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

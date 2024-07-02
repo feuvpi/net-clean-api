@@ -8,6 +8,24 @@
 *.userosscache
 *.sln.docstates
 
+# Ignore generated files and directories
+obj/
+bin/
+*.user
+*.suo
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.ncb
+*.log
+*.ilk
+*.cache
+*.dgspec.json
+*.g.targets
+*.assets.cache
+*.GeneratedMSBuildEditorConfig.editorconfig
+
+
 # User-specific files (Mono Auto Generated)
 mono_crash.*
 
@@ -28,6 +46,10 @@ bld/
 [Oo]bj/
 [Ll]og/
 
+obj
+.vs
+tests/obj
+tests/bin
 # Roslyn cache directories
 *.ide/
 

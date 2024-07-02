@@ -1,6 +1,7 @@
 ﻿using Core.Interfaces;
 using Dapper;
 using Infrastructure.Data;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 
 namespace Infrastructure.Repositories
@@ -76,7 +77,9 @@ namespace Infrastructure.Repositories
 
         private IEnumerable<string> GetProperties(T entity, string separator = "", string prefix = "")
         {
-            return typeof(T).GetProperties().Select(p => $"{p.Name}{separator}{prefix}{p.Name}");
+            return typeof(T).GetProperties()
+                .Where(p => !Attribute.IsDefined(p, typeof(NotMappedAttribute)))
+                .Select(p => $"{p.Name}{separator}{prefix}{p.Name}");
         }
     }
 }

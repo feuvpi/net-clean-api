@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JZbj2bWJVFcfRTlkI8LqBjwdh4i/ccSzvKYa2xugtb4w67sNVViqu2tp9XnDfzSVUc1br+nWj6vBLCpDhIQuvg==",
+  "dgSpecHash": "boXZ7tWB/lF1BKtuCJYutx6s73O2zf9Xy7BpW+j1gvA05D95e+aOGaVLdIldnlXxeV3iloUySF0Dg75+wrf1yg==",
   "success": true,
   "projectFilePath": "M:\\dev\\API\\team-manegement-api\\Core\\Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Feu's m15 R6\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
