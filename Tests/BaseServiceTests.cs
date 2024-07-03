@@ -101,10 +101,10 @@ namespace Tests
 
     }
 
-    public class TestEntity : IBaseEntity
-    {
-        public Guid Id { get; set; }
-    }
+    //public class TestEntity : IBaseEntity
+    //{
+    //    public Guid Id { get; set; }
+    //}
 
     public class TestService : BaseService<TestEntity>
     {
