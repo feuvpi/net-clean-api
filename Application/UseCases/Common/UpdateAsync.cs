@@ -5,9 +5,15 @@ namespace Application.UseCases.Common
 {
     public class UpdateAsync<T> where T : class, IBaseEntity
     {
-        public static async Task<bool> ExecuteAsync<T>(IBaseRepository<T> repository, T entity) where T : class, IBaseEntity
+        private readonly IBaseRepository<T> _repository;
+
+        public UpdateAsync(IBaseRepository<T> repository)
         {
-            return await repository.UpdateAsync(entity);
+            _repository = repository;
+        }
+        public async Task<bool> ExecuteAsync(T entity)
+        {
+            return await _repository.UpdateAsync(entity);
         }
     }
 }

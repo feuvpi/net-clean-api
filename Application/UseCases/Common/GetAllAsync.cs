@@ -5,9 +5,16 @@ namespace Application.UseCases.Common
 {
     public class GetAllAsync<T> where T : class, IBaseEntity
     {
-        public static async Task<IEnumerable<T>> ExecuteAsync<T>(IBaseRepository<T> repository) where T : class, IBaseEntity
+
+        private readonly IBaseRepository<T> _repository;
+
+        public GetAllAsync(IBaseRepository<T> repository)
         {
-            return await repository.GetAllAsync();
+            _repository = repository;
+        }
+        public async Task<IEnumerable<T>> ExecuteAsync()
+        {
+            return await _repository.GetAllAsync();
         }
     }
 }

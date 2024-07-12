@@ -5,9 +5,16 @@ namespace Application.UseCases.Common
 {
     public class GetByIdAsync<T> where T : class, IBaseEntity
     {
-        public static async Task<T> ExecuteAsync<T>(IBaseRepository<T> repository, Guid id) where T : class, IBaseEntity
+        private readonly IBaseRepository<T> _repository;
+
+        public GetByIdAsync(IBaseRepository<T> repository)
         {
-            return await repository.GetByIdAsync(id);
+            _repository = repository;
+        }
+
+        public async Task<T> ExecuteAsync(Guid id)
+        {
+            return await _repository.GetByIdAsync(id);
         }
     }
 }
