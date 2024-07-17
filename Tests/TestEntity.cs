@@ -1,4 +1,6 @@
 ﻿
+using Core.Interfaces;
+
 namespace Tests
 {
     public class TestEntity : IBaseEntity
