@@ -54,3 +54,4 @@ M:\dev\API\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.pdb
 M:\dev\API\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.genruntimeconfig.cache
 M:\dev\API\team-manegement-api\team-manegement-api\obj\Debug\net8.0\ref\API.dll
 M:\dev\API\team-manegement-api\team-manegement-api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+M:\dev\API\team-manegement-api\team-manegement-api\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs

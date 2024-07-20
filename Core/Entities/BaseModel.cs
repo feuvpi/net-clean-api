@@ -6,6 +6,6 @@ namespace team_manegement_api.Core
     public class BaseModel : IBaseEntity
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }

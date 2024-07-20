@@ -23,7 +23,7 @@ namespace team_manegement_api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<T>> GetByIdAsync(Guid id)
+        public async Task<ActionResult<T>> GetByIdAsync(int id)
         {
             var entity = await _service.GetByIdAsync(id);
             if (entity == null)
@@ -41,7 +41,7 @@ namespace team_manegement_api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAsync(Guid id, T entity)
+        public async Task<IActionResult> UpdateAsync(int id, T entity)
         {
             if (id != entity.Id)
             {

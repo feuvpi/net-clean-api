@@ -28,6 +28,20 @@ namespace Infrastructure.Repositories
             }
         }
 
+        public async Task<Usuario?> GetByEmailAsync(string email)
+        {
+            using (var connection = _context.CreateConnection())
+            {
+                if (connection == null)
+                {
+                    throw new InvalidOperationException("Unable to create database connection.");
+                }
+
+                var query = "SELECT * FROM Usuario WHERE email = @email";
+                return await connection.QuerySingleOrDefaultAsync<Usuario>(query, new { email });
+            }
+        }
+
         public async Task<IEnumerable<Usuario>> GetAllAsync()
         {
             using (var connection = _context.CreateConnection())

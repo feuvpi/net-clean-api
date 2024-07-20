@@ -1965,6 +1965,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Core": "1.0.0",
           "Dapper": "2.1.35",
           "Infrastructure": "1.0.0",
@@ -1980,9 +1981,6 @@
       "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "BCrypt.Net-Next": "4.0.3"
-        },
         "compile": {
           "bin/placeholder/Core.dll": {}
         },
