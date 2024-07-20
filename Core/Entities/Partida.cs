@@ -5,10 +5,10 @@ namespace team_manegement_api.Core
 {
     public class Partida : BaseModel
     {
-        public Guid TimeId { get; set; }
+        public int TimeId { get; set; }
         [NotMapped]
         public Time Time { get; set; }  
-        public Guid GrupoPartidaId { get; set; } // -- Id from GrupoPartida is FK of Partida
+        public int GrupoPartidaId { get; set; } // -- Id from GrupoPartida is FK of Partida
         [NotMapped]
         public GrupoPartida GrupoPartida { get; set; }
         public string TimeAdversario { get; set; }

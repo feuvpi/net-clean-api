@@ -5,11 +5,11 @@ namespace team_manegement_api.Core
     public class PartidaAtleta : BaseModel
     {
         // -- Id from Atleta is a FK of PartidaAtleta
-        public Guid AtletaId { get; set; }
+        public int AtletaId { get; set; }
         [NotMapped]
         public Atleta Atleta { get; set; }
         // -- Id from Partida is a FK of PartidaAtleta
-        public Guid PartidaId { get; set; }
+        public int PartidaId { get; set; }
         [NotMapped]
         public Partida Partida { get; set; }
         public int Minutagem { get; set; }
