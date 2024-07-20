@@ -26,9 +26,9 @@ To get started with the project, you'll need to:
 
 The following features are planned to be implemented in the future:
 
-- [ X ] Dapper ORM
-- [ X ] Postgres Database
-- [ X ] Built-in Email+Password Authentication
+- [X] Dapper ORM
+- [X] Postgres Database
+- [X] Built-in Email+Password Authentication
 - [ ] Cache service.
 - [ ] OAuth integration.
 - [ ] Monitoring tool.
