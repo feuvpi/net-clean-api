@@ -12,7 +12,7 @@ namespace Application.UseCases.Common
             _repository = repository;
         }
 
-        public async Task<T> ExecuteAsync(Guid id)
+        public async Task<T> ExecuteAsync(int id)
         {
             return await _repository.GetByIdAsync(id);
         }

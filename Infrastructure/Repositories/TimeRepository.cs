@@ -15,7 +15,7 @@ namespace Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<Time> GetByIdAsync(Guid id)
+        public async Task<Time> GetByIdAsync(int id)
         {
             using (var connection = _context.CreateConnection())
             {

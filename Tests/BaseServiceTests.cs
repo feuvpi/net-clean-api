@@ -25,8 +25,8 @@ namespace Tests
             // Arrange
             var entities = new List<TestEntity>
     {
-        new TestEntity { Id = Guid.NewGuid() },
-        new TestEntity { Id = Guid.NewGuid() }
+        new TestEntity { Id = 1 },
+        new TestEntity { Id = 2 }
     };
             _repositoryMock.Setup(r => r.GetAllAsync()).ReturnsAsync(entities);
 
@@ -42,7 +42,7 @@ namespace Tests
         public async Task GetByIdAsync_ReturnsEntityWithMatchingId()
         {
             // Arrange
-            var entity = new TestEntity { Id = Guid.NewGuid() };
+            var entity = new TestEntity { Id = 1 };
             _repositoryMock.Setup(r => r.GetByIdAsync(entity.Id)).ReturnsAsync(entity);
 
             // Act
@@ -57,7 +57,7 @@ namespace Tests
         public async Task AddAsync_AddsEntityToRepository()
         {
             // Arrange
-            var entity = new TestEntity { Id = Guid.NewGuid() };
+            var entity = new TestEntity { Id = 1 };
             _repositoryMock.Setup(r => r.AddAsync(entity)).ReturnsAsync(entity);
 
             // Act
@@ -73,7 +73,7 @@ namespace Tests
         public async Task UpdateAsync_UpdatesEntityInRepository()
         {
             // Arrange
-            var entity = new TestEntity { Id = Guid.NewGuid() };
+            var entity = new TestEntity { Id = 1 };
             _repositoryMock.Setup(r => r.UpdateAsync(entity)).ReturnsAsync(true);
 
             // Act

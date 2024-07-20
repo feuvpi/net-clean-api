@@ -15,7 +15,7 @@ namespace Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<Partida> GetByIdAsync(Guid id)
+        public async Task<Partida> GetByIdAsync(int id)
         {
             using (var connection = _context.CreateConnection())
             {

@@ -29,7 +29,7 @@ namespace Infrastructure.Repositories
             }
         }
 
-        public async Task<PartidaAtleta> GetByIdAsync(Guid id)
+        public async Task<PartidaAtleta> GetByIdAsync(int id)
         {
             using (var connection = _context.CreateConnection())
             {
