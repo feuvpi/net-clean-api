@@ -10,8 +10,6 @@ CREATE TABLE Atleta (
     Posicao VARCHAR(255) NOT NULL,
 );
 
-    
-    SELECT * FROM atleta
 CREATE TABLE Usuario (
     Id SERIAL PRIMARY KEY,
     Nome VARCHAR(255) NOT NULL,
@@ -21,7 +19,7 @@ CREATE TABLE Usuario (
     Password VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE Time (
+CREATE TABLE Base (
     Id SERIAL PRIMARY KEY,
     Nome VARCHAR(255) NOT NULL,
     IdadeLimite INTEGER NOT NULL
@@ -29,7 +27,7 @@ CREATE TABLE Time (
 
 CREATE TABLE TimeAtleta (
     Id SERIAL PRIMARY KEY,
-    TimeId SERIAL NOT NULL REFERENCES Time(Id),
+    TimeId SERIAL NOT NULL REFERENCES Base(Id),
     AtletaId SERIAL NOT NULL REFERENCES Atleta(Id),
     DataAssociacao TIMESTAMP NOT NULL
 );
@@ -37,7 +35,7 @@ CREATE TABLE TimeAtleta (
 CREATE TABLE ExameMedico (
     Id SERIAL PRIMARY KEY,
     Descricao TEXT NOT NULL,
-    AtletaId INTEGER NOT NULL,
+    AtletaId SERIAL NOT NULL REFERENCES Atleta(Id),
     Data TIMESTAMP NOT NULL,
     Observacoes TEXT NOT NULL,
     DocumentUrl TEXT NOT NULL
@@ -60,8 +58,8 @@ CREATE TABLE Nota (
 
 CREATE TABLE Partida (
     Id SERIAL PRIMARY KEY,
-    TimeId UUID NOT NULL,
-    GrupoPartidaId INTEGER NOT NULL,
+    BaseId SERIAL NOT NULL REFERENCES Base(Id),
+    GrupoPartidaId SERIAL NOT NULL REFERENCES GrupoPartida(Id),
     TimeAdversario TEXT NOT NULL,
     DataHorario TIMESTAMP NOT NULL,
     Local TEXT NOT NULL,
@@ -71,8 +69,8 @@ CREATE TABLE Partida (
 
 CREATE TABLE PartidaAtleta (
     Id SERIAL PRIMARY KEY,
-    AtletaId UUID NOT NULL,
-    PartidaId UUID NOT NULL,
+    AtletaId SERIAL NOT NULL REFERENCES Atleta(Id),
+    PartidaId SERIAL NOT NULL REFERENCES Partida(Id),
     Minutagem INTEGER NOT NULL,
     CartoesAmarelos INTEGER NOT NULL,
     CartaoVermelho INTEGER NOT NULL,
