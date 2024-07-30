@@ -12,25 +12,25 @@ namespace team_manegement_api.Extensions
         public static IServiceCollection AddCustomServices(this IServiceCollection services)
         {
             services.AddScoped<IDatabaseContext, DapperContext>();
-            services.AddScoped<IBaseRepository<Atleta>, AtletaRepository>();
-            services.AddScoped<IBaseRepository<Nota>, NotaRepository>();
-            services.AddScoped<IBaseRepository<Time>, TimeRepository>();
-            services.AddScoped<IBaseRepository<TimeAtleta>, TimeAtletaRepository>();
-            services.AddScoped<IBaseRepository<Partida>, PartidaRepository>();
-            services.AddScoped<IBaseRepository<PartidaAtleta>, PartidaAtletaRepository>();
-            services.AddScoped<IBaseRepository<ExameMedico>, ExameMedicoRepository>();
-            services.AddScoped<IBaseRepository<Usuario>, UsuarioRepository>();
-            services.AddScoped<IBaseRepository<GrupoPartida>, GrupoPartidaRepository>();
+            services.AddTransient<IBaseRepository<Atleta>, AtletaRepository>();
+            services.AddTransient<IBaseRepository<Nota>, NotaRepository>();
+            services.AddTransient<IBaseRepository<Time>, TimeRepository>();
+            services.AddTransient<IBaseRepository<TimeAtleta>, TimeAtletaRepository>();
+            services.AddTransient<IBaseRepository<Partida>, PartidaRepository>();
+            services.AddTransient<IBaseRepository<PartidaAtleta>, PartidaAtletaRepository>();
+            services.AddTransient<IBaseRepository<ExameMedico>, ExameMedicoRepository>();
+            services.AddTransient<IBaseRepository<Usuario>, UsuarioRepository>();
+            services.AddTransient<IBaseRepository<GrupoPartida>, GrupoPartidaRepository>();
 
-            services.AddScoped<AtletaService>();
-            services.AddScoped<NotaService>();
-            services.AddScoped<TimeService>();
-            services.AddScoped<TimeAtletaService>();
-            services.AddScoped<PartidaService>();
-            services.AddScoped<PartidaAtletaService>();
-            services.AddScoped<ExameMedicoService>();
-            services.AddScoped<UsuarioService>();
-            services.AddScoped<GrupoPartidaService>();
+            services.AddTransient<AtletaService>();
+            services.AddTransient<NotaService>();
+            services.AddTransient<TimeService>();
+            services.AddTransient<TimeAtletaService>();
+            services.AddTransient<PartidaService>();
+            services.AddTransient<PartidaAtletaService>();
+            services.AddTransient<ExameMedicoService>();
+            services.AddTransient<UsuarioService>();
+            services.AddTransient<GrupoPartidaService>();
             return services;
         }
     }

@@ -25,6 +25,8 @@ bin/
 *.assets.cache
 *.GeneratedMSBuildEditorConfig.editorconfig
 
+.vs
+
 
 # User-specific files (Mono Auto Generated)
 mono_crash.*
